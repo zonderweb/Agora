@@ -20,5 +20,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "smart-grid": "^2.1.1"
   }
 }
