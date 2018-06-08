@@ -2,6 +2,7 @@
 @import "fonts";
 @import "libs";
 @import "smartgrid";
+@import "_mixins/mixins";
 
 ::placeholder {
 	color: #666;
@@ -17,7 +18,7 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
-	font-family: $default-font;
+	font-family: $poppins;
 	overflow-x: hidden;
 	color: $text;
 	input, textarea {
@@ -47,6 +48,15 @@ body {
 
 b, strong {
 	font-weight: bold;
+}
+
+.wrapper {
+	@include wrapper;
+	justify-content: space-between;
+}
+
+.wrapper-l {
+	@include wrapper-long;
 }
 
 

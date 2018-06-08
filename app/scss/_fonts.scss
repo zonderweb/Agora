@@ -1,4 +1,12 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("poppins", "../fonts/PoppinsRegular/Poppinsregular");
+@include font-face("poppins-medium", "../fonts/PoppinsMedium/Poppinspoppins-semiboldmedium");
+@include font-face("poppins", "../fonts/PoppinsBold/Poppinsbold", bold);
+
+@include font-face("oswald", "../fonts/OswaldRegular/Oswaldregular");
+@include font-face("oswald-medium", "../fonts/OswaldMedium/Oswaldmedium");
+@include font-face("oswald", "../fonts/OswaldBold/OswaldBold", bold);
+
+@include font-face("montseratt", "../fonts/MontserratRegular/montserrat");
+@include font-face("montseratt", "../fonts/MontserratBold/montserratbold", bold);
