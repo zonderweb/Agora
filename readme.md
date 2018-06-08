@@ -1,4 +1,4 @@
-# Agora [.psd => .html]
+# Agora – eCommerce html Template [.psd => .html]
 
 **adaptive layout [scss | smartgrid | gulp]**
 
