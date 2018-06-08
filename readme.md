@@ -2,4 +2,4 @@
 
 **adaptive layout [scss | smartgrid | gulp]**
 
-![Progect logo](https://github.com/zonderweb/HubiService/blob/master/app/img/logo-git.jpg)
+![Progect logo prewiew](https://github.com/zonderweb/Agora/blob/master/app/img/logo-prew.jpg)
