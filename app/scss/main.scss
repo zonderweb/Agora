@@ -50,6 +50,12 @@ b, strong {
 	font-weight: bold;
 }
 
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 .wrapper {
 	@include wrapper;
 	justify-content: space-between;
@@ -59,6 +65,4 @@ b, strong {
 	@include wrapper-long;
 }
 
-
-
-//@import "media"; // Always at the end
+@import "header";

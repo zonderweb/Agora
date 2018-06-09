@@ -1,0 +1,152 @@
+.header {
+	background: $bg-header;
+}
+
+.headerLine {
+	border-bottom: 1px solid $border-header;
+}
+
+.topBlock {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	color: $bwhite;
+	align-items: center;
+}
+
+.search {
+	border-right: 1px solid $border-header;
+	border-left: 1px solid $border-header;
+
+	&__link {		
+		display: block;
+		padding: 22px 29px;
+		font-size: 18px;
+		color: $bwhite;
+		&:hover {
+			color: $bwhite;
+		}
+	}
+}
+
+.topMenu {
+	border-right: 1px solid $border-header;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+
+.hamburger {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 28px;
+	padding-right: 49px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+
+	&__item {
+		//@include inline-block;
+	}
+
+	&__ico {
+		font-size: 20px;
+		margin-right: 27px;
+	}
+}
+
+.select {
+	display: block;
+	font-size: 10px;
+	line-height: 11px;
+}
+
+.select-a {
+	font-size: 14px;
+	font-family: $poppins-medium;
+	display: block;
+}
+
+.logo {
+	width: 72.2%;
+	text-align: center;
+
+	&__link {
+		@include inline-block;
+		font-family: $montserrat;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $bwhite;
+		letter-spacing: 2.1px;
+		font-size: 21px;
+
+		&:hover {
+			color: $bwhite;
+		}
+	}
+}
+
+.account {
+	border-left: 1px solid $border-header;
+
+	&__link {
+		color: $bwhite;
+		font-size: 18px;
+		padding: 22px 29px;
+		display: block;
+
+		&:hover {
+			color: $bwhite;
+		}
+	}
+}
+
+.favorites {
+	border-left: 1px solid $border-header;
+
+	&__link {
+		color: $bwhite;
+		font-size: 18px;
+		padding: 22px 29px;
+		display: block;
+
+		&:hover {
+			color: $bwhite;
+		}
+	}
+}
+
+.shoppingCart {
+	border-left: 1px solid $border-header;
+	border-right: 1px solid $border-header;
+	position: relative;
+
+	&__link {
+		color: $bwhite;
+		font-size: 18px;
+		padding: 22px 29px;
+		display: block;
+		position: relative;
+
+		&:hover {
+			color: $bwhite;
+		}
+	}
+
+	&__qnt {
+		position: absolute;
+		top: 13px;
+		right: 18px;
+		background: $accent;
+		font-size: 11px;
+		color: $bwhite;
+		padding: 1px 6px;
+		border-radius: 50%;
+	}
+}

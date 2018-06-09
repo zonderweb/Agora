@@ -2,3 +2,8 @@
 	max-width: 1800px;
 	margin: 0 auto;
 }
+
+@mixin inline-block {
+	display: inline-block;
+	vertical-align: middle;
+}
