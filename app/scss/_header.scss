@@ -15,6 +15,10 @@
 	justify-content: flex-start;
 	color: $bwhite;
 	align-items: center;
+	@include sm-block {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 .search {
@@ -51,9 +55,7 @@
 	display: flex;
 	justify-content: center;
 
-	&__item {
-		//@include inline-block;
-	}
+	&__item {}
 
 	&__ico {
 		font-size: 20px;
@@ -76,6 +78,10 @@
 .logo {
 	width: 72.2%;
 	text-align: center;
+	@include sm-block {
+		width: 100%;
+		border-bottom: 1px solid $border-header;
+	}
 
 	&__link {
 		@include inline-block;
@@ -85,6 +91,10 @@
 		color: $bwhite;
 		letter-spacing: 2.1px;
 		font-size: 21px;
+		@include sm-block {
+			padding-top: 22px;
+			padding-bottom: 22px;
+		}
 
 		&:hover {
 			color: $bwhite;
@@ -148,5 +158,25 @@
 		color: $bwhite;
 		padding: 1px 6px;
 		border-radius: 50%;
+	}
+}
+
+.ord1 {
+	@include sm-block {
+		order: 1;
+	}
+}
+
+.ord2 {
+	@include sm-block {
+		order: 2;
+	}
+}
+
+.topMenu {
+	@include xs-block {
+		order: 3;
+		width: 100%;
+		border-top: 1px solid $border-header;
 	}
 }
