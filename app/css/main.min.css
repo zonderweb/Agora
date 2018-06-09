@@ -5015,3 +5015,118 @@ a:hover {
     border-top: 1px solid #555969;
   }
 }
+
+.topMenu {
+  position: relative;
+}
+
+.dropDown {
+  position: absolute;
+  top: 101%;
+  left: 0;
+  background: #3a54d6;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-arround;
+  -webkit-justify-content: space-arround;
+      -ms-flex-pack: space-arround;
+          justify-content: space-arround;
+  padding: 75px;
+  cursor: default;
+}
+
+.h2-dropdown {
+  font-size: 18px;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.dropDown__item {
+  padding-left: 75px;
+  padding-right: 75px;
+  white-space: nowrap;
+  border-right: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.dropDown__item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.dropDown__item:first-child {
+  padding-left: 0;
+}
+
+.dropDown__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dropDown__link {
+  color: #bdc7fc;
+  font-family: "poppins", sans-serif;
+  font-size: 12px;
+}
+
+.dropDown__link:hover {
+  color: #bdc7fc;
+  text-decoration: underline;
+}
+
+.common__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.common__link {
+  font-family: "poppins-medium", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 35px;
+  display: block;
+  color: #fff;
+}
+
+.common__link:hover {
+  color: #fff;
+}
+
+.address-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 55px;
+}
+
+.icon-box {
+  font-size: 33px;
+  margin-right: 29px;
+}
+
+.address__title {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "poppins-medium", sans-serif;
+  letter-spacing: 2px;
+}
+
+.address__text {
+  font-size: 10px;
+  color: #bdc7fc;
+}
