@@ -4749,6 +4749,13 @@ a:hover {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1730px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media screen and (max-width: 1170px) {
   .wrapper {
     padding-left: 15px;
@@ -5045,6 +5052,11 @@ a:hover {
   font-family: "oswald", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
+  color: #fff;
+}
+
+.dropDown {
+  display: none;
 }
 
 .dropDown__item {
@@ -5117,6 +5129,7 @@ a:hover {
 .icon-box {
   font-size: 33px;
   margin-right: 29px;
+  color: #fff;
 }
 
 .address__title {
@@ -5124,6 +5137,7 @@ a:hover {
   text-transform: uppercase;
   font-family: "poppins-medium", sans-serif;
   letter-spacing: 2px;
+  color: #fff;
 }
 
 .address__text {

@@ -207,10 +207,11 @@
 	font-family: $oswald;
 	text-transform: uppercase;
 	font-weight: normal;
+	color: #fff;
 }
 
 .dropDown {
-	// display: none;
+	display: none;
 
 	&__item {
 		padding-left: 75px;
@@ -281,6 +282,7 @@
 .icon-box {
 	font-size: 33px;
 	margin-right: 29px;
+	color: #fff;
 }
 
 .address {
@@ -289,6 +291,7 @@
 		text-transform: uppercase;
 		font-family: $poppins-medium;
 		letter-spacing: 2px;
+		color: #fff;
 	}
 
 	&__text {
