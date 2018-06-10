@@ -1,5 +1,6 @@
 .header {
 	background: $bg-header;
+	z-index: 9999;
 }
 
 .headerLine {
@@ -7,10 +8,6 @@
 }
 
 .topBlock {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: flex-start;
 	color: $bwhite;
@@ -48,14 +45,8 @@
 	margin: 0;
 	padding-left: 28px;
 	padding-right: 49px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: center;
-
-	&__item {}
 
 	&__ico {
 		font-size: 20px;
@@ -192,10 +183,6 @@
 	top: 101%;
 	left: 0;
 	background: $accent;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-arround;
 	padding: 75px;
@@ -270,10 +257,6 @@
 }
 
 .address-item {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: flex-start;
 	margin-bottom: 55px;
