@@ -5182,6 +5182,13 @@ a:hover {
   line-height: 150px;
 }
 
+@media screen and (max-width: 992px) {
+  .slide-bigtext {
+    font-size: 100px;
+    line-height: 80px;
+  }
+}
+
 .slide::before, .slide::after {
   font-weight: bold;
   font-family: "Font Awesome 5 Free";
@@ -5208,6 +5215,12 @@ a:hover {
           align-items: center;
   cursor: pointer;
   margin-bottom: -30px;
+}
+
+@media screen and (max-width: 720px) {
+  .slide::before, .slide::after {
+    display: none;
+  }
 }
 
 .slide::before {
@@ -5400,4 +5413,170 @@ a:hover {
 
 .odds-item:hover .odds-link {
   font-size: 13px;
+}
+
+.dealDay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dealDay-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(50% - 0px);
+  width: calc(50% - 0px);
+}
+
+@media screen and (max-width: 1170px) {
+  .dealDay-item {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+}
+
+.dealDay-info {
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1170px) {
+  .dealDay-info {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.dealDay-picture {
+  background: #ccc;
+}
+
+.dealDay__wrapper {
+  text-align: center;
+  padding-left: 17.3%;
+  padding-right: 17.3%;
+}
+
+.block-name {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #bbb;
+  font-family: "poppins-medium", sans-serif;
+}
+
+.block-title {
+  font-family: "oswald", sans-serif;
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.block__link {
+  color: #111;
+}
+
+.block__link:hover {
+  color: #111;
+}
+
+.block-text {
+  color: #888;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.new-price {
+  font-size: 48px;
+  font-weight: bold;
+  color: #3a54d6;
+  margin-right: 35px;
+}
+
+.old-price {
+  font-size: 30px;
+  font-family: "poppins-medium", sans-serif;
+  color: #111;
+  text-decoration: line-through;
+}
+
+.block-price {
+  margin-bottom: 70px;
+}
+
+.block-counter {
+  background: #fff;
+  display: inline-block;
+  padding: 20px 26px;
+  -webkit-box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1), inset 0px 1px 0 0 rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1), inset 0px 1px 0 0 rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.cointer-item {
+  font-family: "poppins-medium", sans-serif;
+  display: inline-block;
+  padding-right: 18px;
+  padding-left: 18px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cointer-item:first-child {
+  padding-left: 0;
+}
+
+.cointer-item:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.couter-nmb {
+  font-size: 25px;
+  color: #111;
+  display: block;
+  line-height: 1.2em;
+}
+
+.counter-date {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #3a54d6;
+  line-height: 1.2em;
+}
+
+.dealDay-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dealDay-picture {
+  text-align: center;
+}
+
+.dealDay-img__link {
+  display: block;
 }

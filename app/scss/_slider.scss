@@ -24,6 +24,11 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		line-height: 150px;
+
+		@include md-block {
+			font-size: 100px;
+			line-height: 80px;
+		}
 	}
 
 	&::before,
@@ -43,6 +48,9 @@
 		align-items: center;
 		cursor: pointer;
 		margin-bottom: -30px;
+		@include sm-block {
+			display: none;
+		}
 	}
 
 	&::before {
