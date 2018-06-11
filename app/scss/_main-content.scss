@@ -6,14 +6,20 @@
 
 .main-odds {
 	@include row-flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content:  space-around;
+	align-items: strech;
 }
 
 .odds-item {
 	@include col();
 	@include size(3);
+	@include size-md(6);
+	@include size-xsm(12);
+	@include md-block {
+		border-bottom: 1px solid #e6e6e6;
+	}
 	padding: 79px 72px;
+	overflow: hidden;
 	text-align: center;
 	border-right: 1px solid #e6e6e6;
 
@@ -21,6 +27,7 @@
 		border-right: none;
 	}
 }
+
 
 .odds-ico {
 	color: $accent;
@@ -42,7 +49,7 @@
 }
 
 .odds-link {
-	font-size: 13px;
+	font-size: 0px;
 	color: $accent;
 	font-family: $poppins-medium;
 
@@ -55,5 +62,11 @@
 		font-family: $ico-font;
 		font-weight: bold;
 		margin-left: 5px;
+	}
+}
+
+.odds-item:hover {
+	.odds-link {
+		font-size: 13px;
 	}
 }

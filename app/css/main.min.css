@@ -5315,14 +5315,13 @@ a:hover {
           flex-wrap: wrap;
   margin-left: 0px;
   margin-right: 0px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: strech;
+  -webkit-align-items: strech;
+      -ms-flex-align: strech;
+          align-items: strech;
 }
 
 .odds-item {
@@ -5334,8 +5333,29 @@ a:hover {
   width: -webkit-calc(25% - 0px);
   width: calc(25% - 0px);
   padding: 79px 72px;
+  overflow: hidden;
   text-align: center;
   border-right: 1px solid #e6e6e6;
+}
+
+@media screen and (max-width: 992px) {
+  .odds-item {
+    width: -webkit-calc(50% - 0px);
+    width: calc(50% - 0px);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .odds-item {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .odds-item {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .odds-item:last-child {
@@ -5362,7 +5382,7 @@ a:hover {
 }
 
 .odds-link {
-  font-size: 13px;
+  font-size: 0px;
   color: #3a54d6;
   font-family: "poppins-medium", sans-serif;
 }
@@ -5376,4 +5396,8 @@ a:hover {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   margin-left: 5px;
+}
+
+.odds-item:hover .odds-link {
+  font-size: 13px;
 }
