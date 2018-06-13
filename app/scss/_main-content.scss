@@ -75,6 +75,7 @@
 .dealDay {
 	@include row-flex();
 	justify-content: space-between;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .dealDay-item {
