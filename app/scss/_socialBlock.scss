@@ -1,0 +1,100 @@
+.socialTop {
+	@include row-flex();
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.sNetBlock {
+	@include col();
+	@include size(3);
+	padding-top: 74px;
+	padding-bottom: 72px;
+	text-align: center;
+	color: #fff;
+}
+
+.ltSlider {
+	@include col();
+	@include size(6);
+}
+
+.sNetBlock,
+.ltSlider {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.sNetTW {
+	background: #49b8f1;
+}
+
+.sNetFB {
+	background: #2941b9;
+}
+
+.sNetBlock__ico {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.sNetTitle {
+	margin-bottom: 70px;
+}
+
+.sNetTags__link {
+	color: #fff;
+	font-size: 14px;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.sNetName {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.sNetFollowers {
+	font-size: 48px;
+	font-family: $oswald;
+	line-height: 48px;
+}
+
+.ltSlider {
+	padding: 60px;
+}
+
+.ltSlider__title {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #bbb;
+}
+
+.tweet__text {
+	font-size: 20px;
+	color: #111;
+
+	a {
+		color: $accent;
+
+		&:hover {
+			color: $accent;
+		} 
+	}
+}
+
+.tweetAutor__nick {
+	font-size: 12px;
+	color: #111;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.tweetAutor__time {
+	font-size: 12px;
+	color: #bbb;
+}

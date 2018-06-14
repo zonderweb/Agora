@@ -5859,6 +5859,7 @@ a:hover {
   height: 75px;
   text-align: center;
   width: 100%;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .loadMore-box__link {
@@ -5881,4 +5882,142 @@ a:hover {
   color: #3a54d6;
   margin-right: 15px;
   font-size: 20px;
+}
+
+.socialTop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.sNetBlock {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(25% - 0px);
+  width: calc(25% - 0px);
+  padding-top: 74px;
+  padding-bottom: 72px;
+  text-align: center;
+  color: #fff;
+}
+
+.ltSlider {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(50% - 0px);
+  width: calc(50% - 0px);
+}
+
+.sNetBlock,
+.ltSlider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.sNetTW {
+  background: #49b8f1;
+}
+
+.sNetFB {
+  background: #2941b9;
+}
+
+.sNetBlock__ico {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.sNetTitle {
+  margin-bottom: 70px;
+}
+
+.sNetTags__link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.sNetTags__link:hover {
+  color: #fff;
+}
+
+.sNetName {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.sNetFollowers {
+  font-size: 48px;
+  font-family: "oswald", sans-serif;
+  line-height: 48px;
+}
+
+.ltSlider {
+  padding: 60px;
+}
+
+.ltSlider__title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
+}
+
+.tweet__text {
+  font-size: 20px;
+  color: #111;
+}
+
+.tweet__text a {
+  color: #3a54d6;
+}
+
+.tweet__text a:hover {
+  color: #3a54d6;
+}
+
+.tweetAutor__nick {
+  font-size: 12px;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tweetAutor__time {
+  font-size: 12px;
+  color: #bbb;
 }
