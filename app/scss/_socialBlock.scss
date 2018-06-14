@@ -66,6 +66,7 @@
 
 .ltSlider {
 	padding: 60px;
+	position: relative;
 }
 
 .ltSlider__title {
@@ -97,4 +98,38 @@
 .tweetAutor__time {
 	font-size: 12px;
 	color: #bbb;
+}
+
+.ltSlider__btn {
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	font-size: 0;
+}
+
+.btn__prew,
+.btn__next {
+	color: #bbb;
+	border: 1px solid #ddd;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: inline-block;
+	font-size: 16px;
+
+	&:hover {
+		color: #bbb;
+	}
+}
+
+.btn__prew {
+	border-right: none;
+	padding-left: 23px;
+	padding-right: 18px;
+	border-radius: 20px 0 0 20px;
+}
+
+.btn__next {
+	padding-right: 23px;
+	padding-left: 18px;
+	border-radius: 0 20px 20px 0;
 }
