@@ -155,3 +155,77 @@
 	padding-left: 18px;
 	border-radius: 0 20px 20px 0;
 }
+
+// INSTAGRAM
+
+.instTop {
+	@include row-flex();
+	justify-content: space-between;
+	align-items: strech;
+}
+
+.instTop-item {
+	@include col();
+	@include size(3);
+	@include size-md(6);
+	@include size-xsm(12);
+	text-align: center;
+	overflow: hidden;
+	@include xsm-block {
+		order: 2;
+	}
+}
+
+.sNetInst {
+	background: #232323;
+	padding-top: 35px;
+	padding-bottom: 35px;
+
+	@include md-block {
+		padding-top: 74px;
+		padding-bottom: 72px;
+	}
+
+	@include xsm-block {
+		order: 1;
+	}
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-direction: column;
+
+	.sNetBlock__ico {
+		color: $accent;
+		margin-bottom: auto;
+		@include xsm-block {
+			margin-bottom: 20px;
+		}
+	}
+
+	.sNetName {
+		color: #666666;
+	}
+
+	.sNetTitle {
+		margin-bottom: auto;
+
+		@include xsm-block {
+			margin-bottom: 70px;
+		}
+	} 
+
+	.sNetFollowers {
+		color: #fff;
+	}
+}
+
+.insTop-link {
+	display: block;
+	img {
+		max-width: 100%;
+		height: auto;
+		@include md-block {
+			width: 100%;
+		}
+	}
+}
