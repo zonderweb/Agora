@@ -7,15 +7,30 @@
 .sNetBlock {
 	@include col();
 	@include size(3);
+	@include size-md(6);
+	@include size-xs(12);
 	padding-top: 74px;
 	padding-bottom: 72px;
 	text-align: center;
 	color: #fff;
+	@include md-block {
+		order: 1;
+	}
+	@include xs-block {
+		order: 2;
+	}
 }
 
 .ltSlider {
 	@include col();
 	@include size(6);
+	@include size-md(12);
+	@include md-block {
+		order: 2;
+	}
+	@include xs-block {
+		order: 1;
+	}
 }
 
 .sNetBlock,
@@ -73,11 +88,18 @@
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #bbb;
+	@include md-block {
+		margin-bottom: 20px;
+	}
 }
 
 .tweet__text {
 	font-size: 20px;
 	color: #111;
+
+	@include md-block {
+		margin-bottom: 30px;
+	}
 
 	a {
 		color: $accent;
@@ -117,7 +139,7 @@
 	font-size: 16px;
 
 	&:hover {
-		color: #bbb;
+		color: rgba(187, 187, 187, .7);
 	}
 }
 
