@@ -7,6 +7,8 @@
 .popProduct-item {
 	@include col();
 	@include size(3);
+	@include size-md(6);
+	@include size-xsm(12);
 	background: #f5f5f5;
 	border-right: 1px solid #e6e6e6;
 	border-bottom: 1px solid #e6e6e6;
@@ -16,6 +18,7 @@
 
 .popProduct__double {
 	@include size(6);
+	@include size-md(12);
 	background: url(../img/promo/index_pop_promo.jpg) center top;
 	background-size: cover;
 	padding: 60px;
@@ -74,6 +77,8 @@
 	img {
 		display: block;
 		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -145,6 +150,9 @@
 
 .moreInfo__wrapper {
 	margin-top: auto;
+	@include md-block {
+		margin-top: 40px;
+	}
 }
 
 .double__moreInfo {

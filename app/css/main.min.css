@@ -5432,6 +5432,12 @@ a:hover {
   border-bottom: 1px solid #e6e6e6;
 }
 
+@media screen and (max-width: 1170px) {
+  .dealDay {
+    border-bottom: none;
+  }
+}
+
 .dealDay-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5617,6 +5623,20 @@ a:hover {
   padding: 50px;
 }
 
+@media screen and (max-width: 992px) {
+  .popProduct-item {
+    width: -webkit-calc(50% - 0px);
+    width: calc(50% - 0px);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .popProduct-item {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+}
+
 .popProduct__double {
   width: -webkit-calc(50% - 0px);
   width: calc(50% - 0px);
@@ -5624,6 +5644,13 @@ a:hover {
   -webkit-background-size: cover;
           background-size: cover;
   padding: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .popProduct__double {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
 }
 
 .popProduct-pop {
@@ -5675,6 +5702,8 @@ a:hover {
 .popProduct-img img {
   display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .popProduct-title {
@@ -5754,6 +5783,12 @@ a:hover {
 
 .moreInfo__wrapper {
   margin-top: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .moreInfo__wrapper {
+    margin-top: 40px;
+  }
 }
 
 .double__moreInfo {
