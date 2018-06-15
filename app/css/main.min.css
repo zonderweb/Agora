@@ -6266,3 +6266,55 @@ a:hover {
     width: 100%;
   }
 }
+
+.instBottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.inst-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: -webkit-calc(16.66667% - 0px);
+  width: calc(16.66667% - 0px);
+}
+
+@media screen and (max-width: 720px) {
+  .inst-item {
+    width: -webkit-calc(33.33333% - 0px);
+    width: calc(33.33333% - 0px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .inst-item {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+}
+
+.inst-item__link img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .inst-item__link img {
+    width: 100%;
+  }
+}

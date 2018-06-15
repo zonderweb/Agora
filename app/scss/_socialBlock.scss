@@ -229,3 +229,28 @@
 		}
 	}
 }
+
+// Inst small 
+
+.instBottom {
+	@include row-flex();
+	justify-content: space-between;
+	text-align: center;
+}
+
+.inst-item {
+	@include col();
+	@include size(2);
+	@include size-sm(4);
+	@include size-xs(12);
+}
+
+.inst-item__link {
+	img {
+		max-width: 100%;
+		height: auto;
+		@include xs-block {
+			width: 100%;
+		}
+	}
+}
