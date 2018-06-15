@@ -254,3 +254,35 @@
 		}
 	}
 }
+
+.instBlock {
+	border-bottom: 1px solid #f3f3f3;
+}
+
+// LOGO BOX
+
+.logo-box {
+	@include row-flex();
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+}
+
+.logo-item {
+	@include col();
+	@include size(2);
+	@include size-sm(4);
+	@include size-xs(6);
+	@include size-xxs(12);
+	min-height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
