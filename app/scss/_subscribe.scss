@@ -1,0 +1,65 @@
+.subscribe {
+	text-align: center;
+	background: url(../img/pattern.jpg) center top;
+	background-size: cover;
+	padding-top: 165px;
+	padding-bottom: 100px;
+	margin-top: -75px;
+}
+
+.subscribe-header {
+	margin-bottom: 50px;
+}
+
+.h2-subscribe {
+	font-size: 24px;
+	color: #111;
+	letter-spacing: 2.4px;
+	font-family: $oswald;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	margin-bottom: 30px;
+}
+
+.subscribe-text {
+	font-size: 12px;
+	color: #888;
+	line-height: 24px;
+}
+
+.sbsc__wrapper {
+	position: relative;
+	display: inline;
+}
+
+.sbsc-inpt {
+	border: none;
+	box-shadow: 0px 5px 40px 0 rgba(0, 0, 0, 0.1);
+	padding: 23px 32px;
+	width: 33%;
+	border-radius: 50px;
+	font-size: 14px;
+	color: #bbb;
+	@include md-block {
+		width: 50%;
+	}
+
+	&::placeholder {
+		color: #bbb;
+	}
+}
+
+.sbsc-btn {
+	border: none;
+	padding: 0;
+	background: #fff;
+	color: $accent;
+	cursor: pointer;
+	outline: none;
+	position: absolute;
+	right: 32px;
+	bottom: 0;
+	font-size: 18px;
+	line-height: 1;
+}
