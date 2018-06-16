@@ -6498,6 +6498,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 720px) {
+  .sbsc-inpt {
+    width: 90%;
+  }
+}
+
 .sbsc-inpt::-webkit-input-placeholder {
   color: #bbb;
 }
