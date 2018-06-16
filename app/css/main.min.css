@@ -5156,6 +5156,12 @@ a:hover {
   padding-bottom: 200px;
 }
 
+.slider__bg2 {
+  background: url(../img/Slider_bg2.jpg) center top;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
 .slide {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5310,6 +5316,44 @@ a:hover {
 
 .dotted-active {
   background: #fff;
+}
+
+.slide-mediumText {
+  color: #fff;
+}
+
+.small-textSlide {
+  font-size: 60px;
+  letter-spacing: -3px;
+  line-height: 1.2em;
+}
+
+@media screen and (max-width: 720px) {
+  .small-textSlide {
+    font-size: 40px;
+  }
+}
+
+.medium-textSlide {
+  font-size: 100px;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: -7px;
+  line-height: 1.2em;
+}
+
+@media screen and (max-width: 720px) {
+  .medium-textSlide {
+    font-size: 70px;
+  }
+}
+
+.slide2 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 8.33%;
 }
 
 .main {
@@ -6726,4 +6770,9 @@ a:hover {
   color: #fff;
   font-size: 30px;
   margin-left: 5px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #444;
 }

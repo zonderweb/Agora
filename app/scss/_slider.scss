@@ -9,6 +9,11 @@
 	padding-bottom: 200px;
 }
 
+.slider__bg2 {
+	background: url(../img/Slider_bg2.jpg) center top;
+	background-size: cover;
+}
+
 .slide {
 	display: flex;
 	justify-content: center;
@@ -137,4 +142,33 @@
 
 .dotted-active {
 	background: #fff;
+}
+
+.slide-mediumText {
+	color: #fff;
+}
+
+.small-textSlide {
+	font-size: 60px;
+	letter-spacing: -3px;
+	line-height: 1.2em;
+	@include sm-block {
+		font-size: 40px;
+	}
+}
+
+.medium-textSlide {
+	font-size: 100px;
+	font-family: $poppins;
+	font-weight: bold;
+	letter-spacing: -7px;
+	line-height: 1.2em;
+	@include sm-block {
+		font-size: 70px;
+	}
+}
+
+.slide2 {
+	justify-content: flex-start;
+	padding-left: 8.33%;
 }
