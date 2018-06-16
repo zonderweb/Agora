@@ -1,0 +1,46 @@
+.tabs {
+	@include row-flex();
+	justify-content: space-between;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.tab {
+	@include col();
+	@include size(4);
+	text-align: center;
+	display: block;
+	font-family: $poppins-medium;
+	text-transform: uppercase;
+	color: #888;
+	cursor: pointer;
+	font-size: 12px;	
+	background: #f7f7f7;
+	border-left: 1px solid #e6e6e6;
+	height: 75px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	&:first-child {
+		border-left: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.active-tab {
+	background: $accent;
+	color: #fefeff;
+	border-left: none;
+}
