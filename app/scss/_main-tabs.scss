@@ -44,3 +44,35 @@
 	color: #fefeff;
 	border-left: none;
 }
+
+// POP Product (tabs)
+
+.tab_card--grid {
+	@include row-flex();
+	justify-content: space-between;
+}
+
+.tab_card--right,
+.tab_card--left {
+	@include col();
+	@include size(3);
+}
+
+.tab_card--center {
+	@include col();
+	@include size(6);
+}
+
+.popProduct-card {
+	width: 100%;
+}
+
+.popProduct-card--big {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.popProduct-title--big {
+	margin-top: auto;
+}
