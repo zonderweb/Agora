@@ -19,25 +19,16 @@
 	height: 75px;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	@include xs-block {
+		padding-left: 20px;
+		padding-right: 20px;
+		height: auto;
+	}
 
 	&:first-child {
 		border-left: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .active-tab {
 	background: $accent;
@@ -56,15 +47,27 @@
 .tab_card--left {
 	@include col();
 	@include size(3);
+	@include size-md(6);
+	@include md-block {
+		order: 1;
+	}
+	@include size-xs(12);
+	display: flex;
+	flex-direction: column;
 }
 
 .tab_card--center {
 	@include col();
 	@include size(6);
+	@include size-md(12);
+	@include md-block {
+		order: 2;
+	}
 }
 
 .popProduct-card {
 	width: 100%;
+	flex-grow: 1;
 }
 
 .popProduct-card--big {
