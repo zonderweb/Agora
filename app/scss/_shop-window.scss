@@ -2,11 +2,15 @@
 	min-height: 750px;
 	@include row-flex;
 	justify-content: space-between;
+	@include md-block {
+		min-height: auto;
+	}
 }
 
 .shop-wind__left {
 	@include col;
 	@include size(8);
+	@include size-md(12);
 	display: flex;
 	flex-direction: column;
 }
@@ -14,27 +18,40 @@
 .shop-wind__right {
 	@include col;
 	@include size(4);
+	@include size-md(12);
 }
 
 .sw__left--top,
 .sw__left--bottom {
 	flex-grow: 1;
 	height: 50%;
+	@include xs-block {
+		height: auto;
+	}
 }
 
 .sw__left--bottom {
 	display: flex;
 	justify-content: space-between;
+	@include xs-block {
+		flex-wrap: wrap;
+	}
 }
 
 .sw__item {
 	flex-grow: 1;
+	@include xs-block {
+		width: 100%;
+	}
 }
 
 .shop-wind__item {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	@include md-block {
+		min-height: 375px;
+	}
 }
 
 .shop-wind__right {
@@ -47,9 +64,39 @@
 .shop-wind__item {
 	padding: 60px;
 	color: #fff;
+	@include md-block {
+		padding: 40px;
+	}
 }
 
-.sw__left--top {
+.bg-bicycle {
+	background-image: url(../img/promo/bysicle.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.bg-jacket {
+	background-image: url(../img/promo/nike-jacket-mens.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.bg-sneakers {
+	background-image: url(../img/promo/mounting-running.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.bg-bicycleEq {
+	background-image: url(../img/promo/bicycle-eq.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	@include md-block {
+		background-position: right center;
+	}
+}
+
+.bg-blue {
 	background-color: #4aa0d1;
 }
 
@@ -103,6 +150,7 @@
 	font-family: $poppins-medium;
 	box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1), inset 0px 1px 0 0 rgba(255, 255, 255, 0.1);
 	border-radius: 35px;
+	display: inline-block;
 
 	&:hover {
 		color: #fff;

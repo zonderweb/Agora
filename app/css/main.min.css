@@ -6725,6 +6725,12 @@ a:hover {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 992px) {
+  .shop-wind {
+    min-height: auto;
+  }
+}
+
 .shop-wind__left {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6744,6 +6750,13 @@ a:hover {
           flex-direction: column;
 }
 
+@media screen and (max-width: 992px) {
+  .shop-wind__left {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+}
+
 .shop-wind__right {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6754,6 +6767,13 @@ a:hover {
   width: calc(33.33333% - 0px);
 }
 
+@media screen and (max-width: 992px) {
+  .shop-wind__right {
+    width: -webkit-calc(100% - 0px);
+    width: calc(100% - 0px);
+  }
+}
+
 .sw__left--top,
 .sw__left--bottom {
   -webkit-box-flex: 1;
@@ -6761,6 +6781,13 @@ a:hover {
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .sw__left--top,
+  .sw__left--bottom {
+    height: auto;
+  }
 }
 
 .sw__left--bottom {
@@ -6774,11 +6801,25 @@ a:hover {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 576px) {
+  .sw__left--bottom {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
 .sw__item {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .sw__item {
+    width: 100%;
+  }
 }
 
 .shop-wind__item {
@@ -6797,6 +6838,12 @@ a:hover {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 992px) {
+  .shop-wind__item {
+    min-height: 375px;
+  }
+}
+
 .shop-wind__right .pr-wrapper {
   margin-top: auto;
   margin-bottom: 45px;
@@ -6807,7 +6854,43 @@ a:hover {
   color: #fff;
 }
 
-.sw__left--top {
+@media screen and (max-width: 992px) {
+  .shop-wind__item {
+    padding: 40px;
+  }
+}
+
+.bg-bicycle {
+  background-image: url(../img/promo/bysicle.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.bg-jacket {
+  background-image: url(../img/promo/nike-jacket-mens.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.bg-sneakers {
+  background-image: url(../img/promo/mounting-running.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.bg-bicycleEq {
+  background-image: url(../img/promo/bicycle-eq.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+@media screen and (max-width: 992px) {
+  .bg-bicycleEq {
+    background-position: right center;
+  }
+}
+
+.bg-blue {
   background-color: #4aa0d1;
 }
 
@@ -6864,6 +6947,7 @@ a:hover {
           box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1), inset 0px 1px 0 0 rgba(255, 255, 255, 0.1);
   -webkit-border-radius: 35px;
           border-radius: 35px;
+  display: inline-block;
 }
 
 .sw-more__info:hover {
