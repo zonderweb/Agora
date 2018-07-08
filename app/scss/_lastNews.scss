@@ -1,0 +1,66 @@
+.lastNews-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 38px 75px;
+}
+
+.rss-feed {
+	border: 1px solid #dedede;
+	border-radius: 30px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rss-link {
+	font-size: 12px;
+	color: #bbb;
+	display: inline-block;
+
+	&:hover {
+		color: orange;
+	}
+}
+
+.h3-lastNews {
+	font-size: 30px;
+	color: #111;
+	font-family: $oswald;
+	font-weight: normal;
+}
+
+.lastNews-btn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ls-link {
+	color: #bbb;
+	width: 50px;
+	height: 50px;
+	font-size: 12px;
+	border: 1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:last-child {
+		border-left: none;
+	}
+
+	&:hover {
+		color: $accent;
+		opacity: .8;
+	}
+}
+
+.lastNews-next {
+	border-radius: 30px 0 0 30px;
+}
+
+.lastNews-prew {
+	border-radius: 0 30px 30px 0;
+}

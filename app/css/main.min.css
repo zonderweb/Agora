@@ -7074,6 +7074,109 @@ a:hover {
   }
 }
 
+.lastNews-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 38px 75px;
+}
+
+.rss-feed {
+  border: 1px solid #dedede;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rss-link {
+  font-size: 12px;
+  color: #bbb;
+  display: inline-block;
+}
+
+.rss-link:hover {
+  color: orange;
+}
+
+.h3-lastNews {
+  font-size: 30px;
+  color: #111;
+  font-family: "oswald", sans-serif;
+  font-weight: normal;
+}
+
+.lastNews-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ls-link {
+  color: #bbb;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ls-link:last-child {
+  border-left: none;
+}
+
+.ls-link:hover {
+  color: #3a54d6;
+  opacity: .8;
+}
+
+.lastNews-next {
+  -webkit-border-radius: 30px 0 0 30px;
+          border-radius: 30px 0 0 30px;
+}
+
+.lastNews-prew {
+  -webkit-border-radius: 0 30px 30px 0;
+          border-radius: 0 30px 30px 0;
+}
+
 .footer {
   background: #222;
   padding-top: 90px;
